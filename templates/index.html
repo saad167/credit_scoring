@@ -5,26 +5,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'main/style.css' %}">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Credit Scoring</title>
 </head>
 <body>
-        <!--<img src="{% static 'credit_scoring.jpg' %}">-->
+        <img src="{% static 'main/credit_scoring.jpg' %}">
 
-            <h1> hello {{name}} !!!!!</h1>
+            <h2> hello {{name}} !!!!!</h2>
             <br><br>
             <br><br>
             <br><br>
             <br><br>
             <br><br>
 
-            <form action="add">
-                Enter 1st number : <input type="text" name="num1"><br><br>
-                Enter 2st number : <input type="text" name="num2"><br><br>
-
+            <form action="predict">
+                Enter the age : <input type="number" name="age"><br><br>
+                Enter the education level : <input type="number" name="education_level"><br><br>
+                Enter the work experience : <input type="number" name="employ"><br><br>
+                Enter the income : <input type="number" name="income"><br><br>
+                
                 <input type="submit" value="Enter">
             </form>
 
