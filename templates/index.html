@@ -1,6 +1,5 @@
 {% load static %}
 
-{% block content %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,6 +11,7 @@
     <title>Credit Scoring</title>
 </head>
 <body>
+
         <img src="{% static 'main/credit_scoring.jpg' %}">
 
             <h2> hello {{name}} !!!!!</h2>
@@ -20,6 +20,8 @@
             <br><br>
             <br><br>
             <br><br>
+            {% block content %}
+            {% endblock %}
 
             <form action="predict">
                 Enter the age : <input type="number" name="age"><br><br>
@@ -34,4 +36,3 @@
 
 </body>
 </html>
-{% endblock %}
